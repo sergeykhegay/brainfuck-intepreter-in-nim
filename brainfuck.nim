@@ -46,10 +46,6 @@ macro compileFile*(filename: string): stmt =
     compile staticRead(filename.strval)
 
 
-# proc mandelbrot = compileFile "examples/mandelbrot.b"
-
-# mandelbrot()
-
 proc interpret*(code: string) =
     ## Interprets the brainfuck `code` string, reading from stdin 
     ## and writing to stdout.
